@@ -27,5 +27,16 @@ public class CargaInicial {
         copa.adicionarSelecao(s7);
         copa.adicionarSelecao(s8);
 
+        Partida p1 = new Partida(s1, s2, 2, 1);
+        Partida p2 = new Partida(s3, s4, 0, 0);
+        Partida p3 = new Partida(s5, s6, 3, 2);
+        Partida p4 = new Partida(s7, s8, 1, 4);
+
+        copa.registrarPartida(p1);
+        copa.registrarPartida(p2);
+        copa.registrarPartida(p3);
+        copa.registrarPartida(p4);
+
+
     }
 }
