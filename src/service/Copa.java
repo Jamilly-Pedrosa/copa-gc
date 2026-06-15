@@ -21,4 +21,16 @@ public class Copa {
     public void adicionarSelecao(Selecao selecao) {
         selecoes.add(selecao);
     }
+    
+    public void registrarPartida(Partida partida) {
+    partidas.add(partida);
+    }
+
+    public void listarGrupo(char grupo) {
+        for (Selecao selecao : selecoes) {
+            if (selecao.getGrupo() == grupo) {
+                System.out.println(selecao);
+            }
+        }
+    }
 }
