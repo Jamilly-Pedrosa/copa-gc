@@ -37,8 +37,5 @@ public class CargaInicial {
         copa.registrarPartida(p3);
         copa.registrarPartida(p4);
 
-        copa.adicionarArtilheiro("Ada Lovelace (Planeta Dev) - 3 Gols");
-        copa.adicionarArtilheiro("Alan Turing (Git Push) - 2 Gols");
-        copa.adicionarArtilheiro("Linus Torvalds (Binary Stars) - 4 Gols");
     }
 }
