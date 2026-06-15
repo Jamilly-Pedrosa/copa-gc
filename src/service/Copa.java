@@ -43,7 +43,4 @@ public class Copa {
     public void calcularClassificacao() {
         System.out.println("Classificação ainda não disponível.");
     }
-
-    public void adicionarArtilheiro(String s) {
-    }
 }
