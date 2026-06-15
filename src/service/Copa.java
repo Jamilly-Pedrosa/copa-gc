@@ -21,7 +21,7 @@ public class Copa {
     public void adicionarSelecao(Selecao selecao) {
         selecoes.add(selecao);
     }
-    
+
     public void registrarPartida(Partida partida) {
     partidas.add(partida);
     }
@@ -32,5 +32,15 @@ public class Copa {
                 System.out.println(selecao);
             }
         }
+    }
+
+    public void topArtilheiros() {
+    for (String artilheiro : artilheiros) {
+        System.out.println(artilheiro);
+        }
+    }
+
+    public void calcularClassificacao() {
+        System.out.println("Classificação ainda não disponível.");
     }
 }
