@@ -30,22 +30,34 @@ public class Main {
             switch (opcao) {
 
                 case 1:
+                    System.out.print("Digite o grupo (A ou B): ");
+                    char grupo = sc.next().toUpperCase().charAt(0);
 
+                    List<Selecao> selecoes = copa.listarSelecoesPorGrupo(grupo);
+
+                    System.out.println("\n=== Seleções do Grupo " + grupo + " ===");
+                    for (Selecao s : selecoes) {
+                        System.out.println(s);
+                    }
+                    break;
 
                 case 2:
 
-
                 case 3:
 
-
                 case 4:
-
+                    System.out.println("\n=== Artilheiros ===");
+                    for (String a : copa.topArtilheiros()) {
+                        System.out.println(a);
+                    }
+                    break;
 
                 case 0:
-
+                    System.out.println("Saindo do sistema...");
+                    break;
 
                 default:
-
+                    System.out.println("Opção inválida!");
             }
 
         } while (opcao != 0);
