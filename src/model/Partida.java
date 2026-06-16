@@ -1,18 +1,18 @@
 package model;
 
 public class Partida {
-	
-	private Selecao mandante;
+
+    private Selecao mandante;
     private Selecao visitante;
-    private int golsA;
-    private int golsB;
+    private int golsMandante;
+    private int golsVisitante;
 
     public Partida(Selecao mandante, Selecao visitante,
-                   int golsA, int golsB) {
+                   int golsMandante, int golsVisitante) {
         this.mandante = mandante;
         this.visitante = visitante;
-        this.golsA = golsA;
-        this.golsB = golsB;
+        this.golsMandante = golsMandante;
+        this.golsVisitante = golsVisitante;
     }
 
     public Selecao getMandante() {
@@ -23,20 +23,19 @@ public class Partida {
         return visitante;
     }
 
-    public int getGolsA() {
-        return golsA;
+    public int getGolsMandante() {
+        return golsMandante;
     }
 
-    public int getGolsB() {
-        return golsB;
+    public int getGolsVisitante() {
+        return golsVisitante;
     }
 
     @Override
     public String toString() {
-        return mandante.getNome() + " "
-                + golsA + " x "
-                + golsB + " "
-                + visitante.getNome();
+        return mandante.getNome() + " " +
+                golsMandante + " x " +
+                golsVisitante + " " +
+                visitante.getNome();
     }
-
 }
